@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Fitnessfine</title>
+    <style>
+        @keyframes appear {
+            from {
+                opacity: 0;
+                scale: 0.5;
+            }
+
+            to {
+                opacity: 1;
+                scale: 1;
+            }
+        }
+
+        #faza {
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class=" p-3 mx-6 text-gray-500 flex flex-row justify-between items-center flex-wrap ">
+        <div class="flex items-center hover:text-blue-500">
+            <a href="#" class="text-3xl"><i class="fa-solid fa-dumbbell"></i></a>
+
+        </div>
+        <div>
+            <a href="#calories" class="text-lg mx-4 hover:text-blue-500">Calories</a>
+            <a href="recipes" class="text-lg mx-4 hover:text-blue-500">Recipes</a>
+            <a href="nutrition" class="text-lg mx-4 hover:text-blue-500">Nutrition</a>
+            <a href="videos" class="text-lg mx-4 hover:text-blue-500">Videos</a>
+        </div>
+        <a href="#" class="text-gray-500 hover:text-blue-500 text-lg"><i class="fa-solid fa-user"></i></a>
+
+
+    </header>
+
+    <main>
+        <div
+            class="bg-[url(./img/bg-img.jpg)] h-96 bg-cover grayscale hover:grayscale-0 transition-all duration-300 flex flex-col justify-center items-center ">
+            <div class=" p-8 w-[500px] text-center backdrop-blur-sm bg-white/40 rounded-lg">
+                <h1 class="text-4xl font-bold mb-1">You are what you eat!</h1>
+                <h3 class="text-lg mb-3">sign-up for your personalized newsletter</h3>
+                <button class="bg-blue-700 p-2 mx-3 w-28 rounded-lg text-white hover:bg-blue-500 ">Sign-up</button>
+                <button class="bg-blue-700 p-2 mx-3 w-28 rounded-lg text-white hover:bg-blue-500 ">Your e-mail</button>
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="flex flex-col justify-center items-center my-8 text-center">
+            <h1 class="text-[80px] font-bold">News</h1>
+            <p class="text-gray-500">Stay updated with the latest tips, trends, and insights on nutritious eating and
+                active living. <br> Empower yourself to make healthier choices every day!</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 my-8 mx-8">
+            <div>
+                <img src="./img/hiking img.jpg" alt="image 1" class="rounded-xl">
+                <h1 class="my-2 font-bold text-2xl">Fresh Air is matters!</h1>
+                <p class="text-gray-500">Breathing in fresh air revitalizes your body and mind, enhancing focus, energy,
+                    and overall well-being. It’s a simple yet powerful way to connect with nature and boost your health.
+                </p>
+                <button class="bg-gray-500 p-1 rounded-lg text-white hover:bg-gray-400 mt-2 ">News</button>
+            </div>
+            <div>
+                <img src="./img/velo outdoor.jpg" alt="image 2" class="rounded-xl">
+                <h1 class="my-2 font-bold text-2xl">Velo is fun with friends!</h1>
+                <p class="text-gray-500">Cycling with friends turns every ride into an adventure, filled with laughter,
+                    motivation, and shared memories. It’s the perfect way to stay active and bond together.</p>
+                <button class="bg-gray-500 p-1 rounded-lg text-white hover:bg-gray-400 mt-2 ">News</button>
+            </div>
+            <div>
+                <img src="./img/fitness.jpg" alt="image 3" class="rounded-xl">
+                <h1 class="my-2 font-bold text-2xl">Finess is Wellness!</h1>
+                <p class="text-gray-500">Embracing fitness means nurturing your body and mind, creating a path to better
+                    health, energy, and happiness. It's not just exercise—it's a lifestyle of well-being.</p>
+                <button class="bg-gray-500 p-1 rounded-lg text-white hover:bg-gray-400 mt-2 ">News</button>
+            </div>
+            <div>
+                <img src="./img/kid health.jpg" alt="image 4" class="rounded-xl">
+                <h1 class="my-2 font-bold text-2xl">Your kid's health is matters!</h1>
+                <p class="text-gray-500">Prioritizing your child's health lays the foundation for a happy and active
+                    future. Good habits today lead to lifelong wellness and boundless energy. Make his future better!
+                </p>
+                <button class="bg-gray-500 p-1 rounded-lg text-white hover:bg-gray-400 mt-2 ">News</button>
+            </div>
+
+        </div>
+    </section>
+    <div>
+        <div class="flex flex-col text-center justify-center items-center">
+            <h1 class="text-[80px] font-bold">Health is a Choice</h1>
+            <p class="text-gray-500 text-sm mb-4">Taking charge of your health begins with the small, everyday decisions
+                you make. <br>From the food you eat to the way you manage stress and incorporate physical activity,
+                every choice plays a role in shaping your well-being. <br> By prioritizing healthy habits, you empower
+                yourself to live a longer, more fulfilling life. After all, your health is your most valuable
+                asset—nurture it wisely.</p>
+        </div>
+        <div class="grid gap-4 p-4">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="col-span-2 bg-[url(./img/c1.jpeg)] h-60 bg-cover bg-center " id="faza"></div>
+                <div class="bg-[url(./img/c2.jpg)] h-60 bg-cover bg-center" id="faza"></div>
+            </div>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-[url(./img/c3.jpg)] h-60 bg-cover bg-center" id="faza"></div>
+                <div class="bg-[url(./img/c4.jpg)] h-60 bg-cover bg-center" id="faza"></div>
+                <div class="bg-[url(./img/c5.jpeg)] h-60 bg-cover bg-center" id="faza"></div>
+            </div>
+        </div>
+    </div>
+    <h1 class="text-[60px] font-bold text-center">Our Categories Split On Five!</h1>
+    <div class="flex flex-row justify-center items-center flex-wrap">
+        <div class="text-center p-2 mx-6 my-6 drop-shadow-3xl  ">
+            <div class="bg-gray-400 w-[120px] h-[120px] rounded-xl hover:bg-gray-900 cursor-pointer">
+                <a href="#" class="text-white text-[50px] my-2"><i class="fa-solid fa-person-swimming"></i></a>
+                <h1 class="text-white text-xl font-semibold">Swimming</h1>
+            </div>
+        </div>
+
+        <div class="text-center p-2 mx-6 my-6 drop-shadow-3xl">
+            <div class="bg-gray-400 w-[120px] h-[120px] rounded-xl hover:bg-gray-900 cursor-pointer">
+                <a href="#" class="text-white text-[50px] my-2"><i class="fa-solid fa-dumbbell"></i></a>
+                <h1 class="text-white text-xl font-semibold">FITNESS</h1>
+            </div>
+        </div>
+
+        <div class="text-center p-2 mx-6 my-6 drop-shadow-3xl">
+            <div class="bg-gray-400 w-[120px] h-[120px] rounded-xl hover:bg-gray-900 cursor-pointer">
+                <a href="#" class="text-white text-[50px] my-2"><i class="fa-solid fa-carrot"></i></a>
+                <h1 class="text-white text-xl font-semibold">FOOD</h1>
+            </div>
+        </div>
+
+        <div class="text-center p-2 mx-6 my-6 drop-shadow-3xl">
+            <div class="bg-gray-400 w-[120px] h-[120px] rounded-xl hover:bg-gray-900 cursor-pointer">
+                <a href="#" class="text-white text-[50px] my-2"><i class="fa-solid fa-person-skiing-nordic"></i></a>
+                <h1 class="text-white text-xl font-semibold">WINTER</h1>
+            </div>
+        </div>
+
+        <div class="text-center p-2 mx-6 my-6">
+            <div class="bg-gray-400 w-[120px] h-[120px] rounded-xl hover:bg-gray-900 cursor-pointer">
+                <a href="#" class="text-white text-[50px] my-2"><i class="fa-solid fa-table-tennis-paddle-ball"></i></a>
+                <h1 class="text-white text-xl font-semibold">TENNIS</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+        <h1 class="text-[60px] font-bold text-center">Our Community</h1>
+        <div class="flex justify-center items-center my-8 flex-wrap cursor-pointer">
+            <div class="border-gray-400 border-2 w-[400px] h-[130px] p-4 rounded-xl mx-6">
+                <div class="flex items-center">
+                    <img src="./img/user1.jpg" alt="user1" class="h-16 w-16 rounded-full mr-3">
+                    <h1 class="text-2xl font-semibold">Bastian Mauer</h1>
+                </div>
+                <p class="text-gray-500">Great app 5 stars by me! keep up the good work!...</p>
+            </div>
+
+            <div class="border-gray-400 border-2 w-[400px] h-[130px] p-4 rounded-xl  mx-6">
+                <div class="flex items-center">
+                    <img src="./img/user 2.jpg" alt="user2" class="h-16 w-16 rounded-full mr-3">
+                    <h1 class="text-2xl font-semibold">Joe More</h1>
+                </div>
+                <p class="text-gray-500">Very helpfull info! my first source for health and...</p>
+            </div>
+
+            <div class="border-gray-400 border-2 w-[400px] h-[130px] p-4 rounded-xl  mx-6">
+                <div class="flex items-center">
+                    <img src="./img/user3.jpeg" alt="user3" class="h-16 w-16 rounded-full mr-3">
+                    <h1 class="text-2xl font-semibold">Julia Khan</h1>
+                </div>
+                <p class="text-gray-500">Wow Wht a nice website! plz add more videos for...</p>
+            </div>
+        </div>
+        <a href="#"><p class="text-center text-blue-500 text-lg"><u>more...</u></p></a>
+
+    </div>
+    <div class="flex flex-col justify-center items-center my-8">
+        <p class="text-gray-500 text-lg mb-8 ">For more newsletter and tips for health and fitness, please subscribe to our newsletter! it's always free. </p>
+        <form action="/submit" method="post" class=" w-96 bg-white p-6   ">
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700 font-bold mb-2">Name:</label>
+              <input type="text" id="name" name="name" required 
+                     class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+            </div>
+          
+            <div class="mb-4">
+              <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
+              <input type="email" id="email" name="email" required 
+                     class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+            </div>
+          
+            <div class="mb-4">
+              <label for="message" class="block text-gray-700 font-bold mb-2">Message:</label>
+              <textarea id="message" name="message" rows="4" required 
+                        class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+            </div>
+          
+            <button type="submit" 
+                    class="w-full bg-blue-400 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-500 transition duration-700">
+              Submit
+            </button>
+          </form>
+          
+    </div>
+</body>
+<footer>
+    <div class="flex flex-row justify-center items-center p-2">
+        <h1 class="text-gray-500 mr-8">All right reserved 2024 - Fitnessfine.com</h1>
+        <div class="flex flex-row justify-center">
+            <a href="#" class="text-gray-500 text-2xl  transition-all duration-700 hover:text-gray-500"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a href="#"
+                class="text-gray-500 text-2xl ml-8 transition-all duration-700 hover:text-gray-500"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"
+                class="text-gray-500 text-2xl ml-8 transition-all duration-700 hover:text-gray-500"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </div>
+    </footer>
+</html>
